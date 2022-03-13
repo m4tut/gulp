@@ -1,0 +1,6 @@
+mixin container()
+  -
+    const { className = '' } = attributes;
+
+  div(class=(`container ${className}`))
+    block

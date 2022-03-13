@@ -1,0 +1,6 @@
+mixin section()
+  -
+    const { className = '' } = attributes;
+
+  div(class=(`section ${className}`))
+    block

@@ -1,0 +1,7 @@
+mixin list(array)
+  -
+    const { className = '' } = attributes;
+
+  ul(class=(`list ${className}`))
+    each item in array
+      li.list__item!=item

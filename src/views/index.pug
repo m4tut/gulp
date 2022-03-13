@@ -1,0 +1,20 @@
+extends templates/layout/default
+include helpers/mixins
+
+include ../blocks/modules/container/container.pug
+include ../blocks/modules/header/header.pug
+include ../blocks/modules/main/main.pug
+include ../blocks/modules/footer/footer.pug
+
+
+block variables
+  - const title = "gulp"
+
+block content
+  +container()
+    +header()
+    +main()
+    +footer()
+
+block scripts
+  script(src="js/main.min.js")
